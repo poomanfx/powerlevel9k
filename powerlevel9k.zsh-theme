@@ -169,7 +169,7 @@ left_prompt_segment() {
   echo -n "${visual_identifier}"
   # Print the content of the segment, if there is any
   [[ -n "$5" ]] && echo -n "${fg}${5}"
-  echo -n "${POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS}"
+  echo -n "${POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS}%b" #[chitchai] Support bold text 
 
   CURRENT_BG=$3
   last_left_element_index=$current_index
